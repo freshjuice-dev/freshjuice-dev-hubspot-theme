@@ -1,15 +1,15 @@
 {
-  "label": "FreshJuice DEV",
-  "version": "3.0.0",
+  "label": "6clicks Theme",
+  "version": "1.0.0",
   "author": {
-    "name": "Alex Zappa",
-    "email": "alex@zappa.dev",
-    "url": "https://alex.zappa.dev"
+    "name": "Noumer Banal",
+    "email": "noumer.banal@6clicks.com",
+    "url": "https://noumer.com"
   },
-  "documentation_url": "https://github.com/freshjuice-dev/freshjuice-dev-hubspot-theme",
+  "documentation_url": "https://www.6clicks.com/",
   "example_url": "https://143910617.hs-sites-eu1.com",
   "preview_path": "./templates/home.html",
-  "screenshot_path": "./images/template-previews/blog-index.png",
+  "screenshot_path": "./images/template-previews/6clicks-home.jpg",
   "enable_domain_stylesheets": false,
   "license": "MIT",
   "responsive_breakpoints": [

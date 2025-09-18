@@ -1,13 +1,13 @@
 {
-  "name": "freshjuice-dev-hubspot-theme",
-  "version": "3.0.0",
-  "description": "FreshJuice DEV is the open-source Community Edition of the FreshJuice theme — built for developers using HubSpot CMS, Tailwind CSS, Alpine.js, and more. Clean, fast, and flexible. The PRO version with additional modules and templates is available separately.",
+  "name": "6clicks-hubspot-theme",
+  "version": "1.0.0",
+  "description": "6clicks HubSpot Theme - A modern, responsive, and customizable HubSpot theme built with Tailwind CSS and Alpine.js.",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf './_temp' './_dist' && mkdir './_temp' './_dist'",
-    "fetch:hubspot": "hs fetch --overwrite /FreshJuice ./theme && ./scripts/post-fetch.sh",
-    "upload:hubspot": "hs upload ./theme /FreshJuiceDEV",
-    "watch:hubspot": "hs watch ./theme /FreshJuiceDEV",
+    "fetch:hubspot": "hs fetch --overwrite /6clicks-2025 ./theme && ./scripts/post-fetch.sh",
+    "upload:hubspot": "hs upload ./theme /6clicks-2025",
+    "watch:hubspot": "hs watch ./theme /6clicks-2025",
     "watch:tailwind": "npx @tailwindcss/cli -i ./source/css/tailwind.css -o ./theme/css/tailwind.css --watch",
     "build:tailwind": "npx @tailwindcss/cli -i ./source/css/tailwind.css -o ./theme/css/tailwind.css",
     "watch:js": "npx esbuild ./source/js/main.js --outfile=./theme/js/main.js --bundle --watch",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/freshjuice-dev/freshjuice-dev-hubspot-theme.git"
+    "url": "git+ssh://git@github.com:noumer-6clicks/6clicks-hubspot-theme.git"
   },
   "keywords": [
     "hubspot",
