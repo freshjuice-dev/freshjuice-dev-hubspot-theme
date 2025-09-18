@@ -3966,7 +3966,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     }
     return obj;
   }
-  var activeFocusTraps = /* @__PURE__ */ function() {
+  var activeFocusTraps = /* @__PURE__ */ (function() {
     var trapQueue = [];
     return {
       activateTrap: function activateTrap(trap) {
@@ -3994,7 +3994,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
         }
       }
     };
-  }();
+  })();
   var isSelectableInput = function isSelectableInput2(node) {
     return node.tagName && node.tagName.toLowerCase() === "input" && typeof node.select === "function";
   };
@@ -4699,10 +4699,6 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     });
   }
   domReady(() => {
-    console.log("\n\n\n%c\u{1F379}", "color: #CA0000; background: #FFFF00; font-size: 200px; font-weight: bold; padding: 10px 36px; white-space: nowrap;");
-    console.log("%cFresh Juice", "color: #CA0000; background: #FFFF00; font-size: 32px; font-weight: bold; padding: 10px 30px; white-space: nowrap;");
-    console.log("%cIt`s a stunningly crafted starter theme for HubSpot CMS, meticulously assembled using the powerful combination of TailwindCSS and AlpineJS.", "font-size:18px");
-    console.log("%cFork me on GitHub:\nhttps://github.com/freshjuice-dev/freshjuice-dev-hubspot-theme\n\n\n", "font-size:18px");
     module_default.start();
     (0, import_flying_pages_module.default)({
       // Prefetch all pages by default
@@ -4713,13 +4709,13 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
 
 @alpinejs/focus/dist/module.esm.js:
   (*! Bundled license information:
-
+  
   tabbable/dist/index.esm.js:
     (*!
     * tabbable 5.3.3
     * @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
     *)
-
+  
   focus-trap/dist/focus-trap.esm.js:
     (*!
     * focus-trap 6.9.4
