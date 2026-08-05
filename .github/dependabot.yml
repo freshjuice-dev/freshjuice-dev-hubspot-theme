@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore(deps):"
+    labels:
+      - "dependencies"
+    groups:
+      tailwind:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
+      alpine:
+        patterns:
+          - "alpinejs"
+          - "@alpinejs/*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "chore(ci):"
+    labels:
+      - "dependencies"
+      - "ci"

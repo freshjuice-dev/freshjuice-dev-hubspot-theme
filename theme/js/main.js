@@ -3966,7 +3966,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
     }
     return obj;
   }
-  var activeFocusTraps = /* @__PURE__ */ function() {
+  var activeFocusTraps = /* @__PURE__ */ (function() {
     var trapQueue = [];
     return {
       activateTrap: function activateTrap(trap) {
@@ -3994,7 +3994,7 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
         }
       }
     };
-  }();
+  })();
   var isSelectableInput = function isSelectableInput2(node) {
     return node.tagName && node.tagName.toLowerCase() === "input" && typeof node.select === "function";
   };
@@ -4713,13 +4713,13 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
 
 @alpinejs/focus/dist/module.esm.js:
   (*! Bundled license information:
-
+  
   tabbable/dist/index.esm.js:
     (*!
     * tabbable 5.3.3
     * @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
     *)
-
+  
   focus-trap/dist/focus-trap.esm.js:
     (*!
     * focus-trap 6.9.4
