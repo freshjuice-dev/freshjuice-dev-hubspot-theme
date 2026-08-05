@@ -25,13 +25,13 @@ While most HubSpot themes are heavy and bloated, FreshJuice DEV is intentionally
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (v22.0.0 or newer)
+- [Node.js](https://nodejs.org/en/) (v24.0.0 or newer)
 - [HubSpot CMS CLI](https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli)
 
 ### Installation
 
 1. Clone the repo and `cd` into it.
-2. Run `npm install` (requires Node v22.0.0+).
+2. Run `npm install` (requires Node v24.0.0+).
 3. Run `npm run prepare` to install [Husky](https://typicode.github.io/husky/) hooks.
 4. For local development:
    `npm run start` — runs Tailwind CSS, esbuild, and HubSpot CLI with file watching, rebuild, and live upload to HubSpot.
