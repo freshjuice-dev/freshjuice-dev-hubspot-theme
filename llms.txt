@@ -1,0 +1,43 @@
+# FreshJuice DEV HubSpot Theme
+
+> Open-source Developer Edition of the FreshJuice HubSpot CMS theme. Built with Tailwind CSS 4, Alpine.js 3, and HubL templating. MIT licensed. Node 24+ required.
+
+## Getting started
+
+- Clone, `npm install`, `npm run build` to produce a deployable zip in `_dist/`.
+- `npm run start` watches source files and uploads to HubSpot via CLI.
+- `npm run upload:hubspot` uploads the compiled `theme/` directory to HubSpot CMS.
+
+## Project structure
+
+- `source/css/` — Tailwind CSS source files, compiled to `theme/css/tailwind.css`
+- `source/js/` — JavaScript source (Alpine.js modules), bundled via esbuild to `theme/js/main.js`
+- `theme/` — Compiled HubSpot theme (CSS, JS, HubL templates, modules, sections, macros)
+- `theme/templates/layouts/base.html` — Base layout template
+- `theme/templates/partials/` — Header and footer partials
+- `theme/modules/*.module/` — HubSpot modules (each has module.html, fields.json, meta.json, module.css, module.js)
+- `theme/sections/*.html` — Page sections (drag-and-drop in HubSpot page editor)
+- `theme/macros/` — Reusable HubL macros
+- `scripts/` — Build scripts (zip, version bump, post-fetch cleanup)
+
+## Conventions for AI agents
+
+- **CSS:** Edit `source/css/` files. Tailwind compiles to `theme/css/tailwind.css`. For per-project overrides, use `theme/css/theme-overrides.css` — do not edit compiled CSS directly.
+- **JavaScript:** Edit `source/js/` files. esbuild bundles to `theme/js/main.js`. Do not edit `main.js` directly. Use Alpine.js directives (`x-data`, `x-show`, `@click`, etc.) in HubL templates for interactivity instead of adding inline scripts.
+- **Templates:** HubL is the templating language. Templates live in `theme/templates/`. Use `{% module_block %}` and `{% module_attribute %}` for module fields. Use `{% include %}` for partials and `{% macro %}` for reusable components.
+- **Modules:** Each module is a directory with `.module` suffix. `fields.json` defines editor-visible fields, `module.html` is the HubL template, `meta.json` holds metadata. The Husky pre-commit hook strips `module_id` from `meta.json` automatically.
+- **Build:** `npm run build` runs clean → build:js → build:tailwind → build:zip. Always run build after source changes and before committing compiled output.
+- **Customization:** Treat the theme as your own codebase once forked. Do not attempt to maintain upstream sync — each project diverges. See https://freshjuice.dev/developer-edition/docs/customization/
+
+## Docs
+
+- [HubSpot CMS CLI](https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli): Local development CLI commands (fetch, upload, watch)
+- [HubL templating](https://developers.hubspot.com/docs/cms/hubl): HubL tags, filters, functions, and operators
+- [HubSpot modules](https://developers.hubspot.com/docs/cms/module-theme-development): Module and theme development guide
+- [Tailwind CSS 4](https://tailwindcss.com/docs): Utility-first CSS framework
+- [Alpine.js](https://alpinejs.dev/): Minimal JavaScript framework for declarative interactivity
+
+## Optional
+
+- [Customization docs](https://freshjuice.dev/developer-edition/docs/customization/): How to customize the theme locally and via HubSpot Design Manager
+- [FreshJuice DEV demo](https://freshjuice.dev/developer-edition/demo/): Live demo of the theme
