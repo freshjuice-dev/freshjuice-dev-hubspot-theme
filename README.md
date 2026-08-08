@@ -1,5 +1,6 @@
 # 🍹 FreshJuice DEV – Developer Edition of the FreshJuice HubSpot Theme
 
+> ⚠️ PRIVATE REPOSITORY — Proprietary and confidential. See [LICENSE](LICENSE).
 [![GitHub Release](https://img.shields.io/github/v/release/freshjuice-dev/freshjuice-dev-hubspot-theme)](https://github.com/freshjuice-dev/freshjuice-dev-hubspot-theme/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/freshjuice-dev/freshjuice-dev-hubspot-theme)](https://github.com/freshjuice-dev/freshjuice-dev-hubspot-theme/commits/main)
 [![GitHub License](https://img.shields.io/github/license/freshjuice-dev/freshjuice-dev-hubspot-theme)](https://github.com/freshjuice-dev/freshjuice-dev-hubspot-theme/blob/main/LICENSE)
