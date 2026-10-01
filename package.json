@@ -61,7 +61,7 @@
     "@alpinejs/intersect": "^3.15.12",
     "@tailwindcss/cli": "^4.3.3",
     "alpinejs": "^3.15.12",
-    "autoprefixer": "^10.5.4",
+    "autoprefixer": "^10.6.1",
     "esbuild": "^0.28.1",
     "flying-pages-module": "^2.1.4",
     "husky": "^9.1.7",
